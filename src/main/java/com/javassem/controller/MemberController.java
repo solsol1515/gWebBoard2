@@ -45,7 +45,7 @@ public class MemberController {
 	}
 	
 	@RequestMapping("login.do")
-	//*********************************
+	//**********************************************
 	// 세션 사용 > 인자에 HttpSession 변수 선언
 	public String login(MemberVO vo, HttpSession session) {
 		
@@ -67,6 +67,7 @@ public class MemberController {
 	// 일반 요청 함수에서 String 리턴: 뷰페이지 지정
 	// 		이 요청에 Ajax 통신에 의해 값을 전송해야함 (화면 바꾸지 않응려고 Ajax 사용하기때문에)
 	
+	// 회원가입 아이디 중복 확인 
 	@ResponseBody
 	public String checkId(MemberVO vo) {
 				
